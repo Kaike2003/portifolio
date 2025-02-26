@@ -3,30 +3,37 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Kaike Bartolomeu",
-  initials: "DV",
+  initials: "KB",
   url: "https://dillion.io",
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
     "Desenvolvedor Full Stack especializado em JavaScript e TypeScript, com foco no desenvolvimento de softwares robustos e eficientes.",
   summary:
-    "Comecei minha jornada na programação em 2018, durante o ensino médio, e desde então me apaixonei por essa área. Há 2 anos, estou focado em JavaScript e TypeScript, os quais tenho adorado trabalhar. Além disso, tive a oportunidade de estudar outras linguagens como Java, PHP, C e Kotlin.",
+    "Iniciei minha jornada na programação em 2018, durante o ensino médio, e desde então desenvolvi uma profunda paixão por essa área. Nos últimos dois anos, tenho direcionado meu foco para JavaScript e TypeScript, tecnologias com as quais tenho apreciado trabalhar intensivamente. Além disso, adquiri conhecimentos em outras linguagens, incluindo Java, PHP, C e Kotlin, ampliando assim minha versatilidade como desenvolvedor.",
   avatarUrl: "/me.jpg",
   skills: [
-    "React",
-    "Next.js",
+    "JavaScript",
     "Typescript",
+    "React.js",
+    "Next.js",
     "Node.js",
-    "Express js",
-    "Next js",
-    "Tauri js",
+    "Express.js",
+    "Tauri.js",
     "React Native",
     "Tailwind css",
+    "Sass",
+    "Css",
     "Html",
-    "Java",
-    "Php",
-    "C",
-    "Kotlin",
+    "SOLID",
+    "Programação Genérica",
+    "Programação Orientada a Objecto",
+    "Clean Architecture",
+    "MVC",
+    "MySQL",
+    "MongoDB",
+    "Redis",
+    "Prisma ORM",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -120,31 +127,70 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "NetEase",
+      href: "https://github.com/Kaike2003/wifi-frontend",
+      dates: "2024-2025",
+      active: false,
+      description:
+        "O NetEase é um projeto inovador desenvolvido para atender às demandas de conexão de internet de maneira simplificada e eficiente, voltado tanto para indivíduos quanto para empresas. Com uma abordagem centrada no usuário, o NetEase tem como foco transformar a experiência de conexão, promovendo praticidade, acessibilidade e inclusão digital.",
+      technologies: [
+        "Express.js",
+        "JavaScript",
+        "Typescript",
+        "MongoBd",
+        "Redis",
+        "Prisma ORM",
+        "Tailwind Css",
+        "Next.js",
+        "Zod",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Kaike2003/wifi-frontend",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/qrcode.jpg",
+      video: "",
+    },
+    {
+      title: "Site de politica",
+      href: "https://github.com/Kaike2003/politica",
+      dates: "2024",
+      active: false,
+      description:
+        "Desenvolvi um site de política para uma colega que está frequentando a universidade. O projeto tem como objetivo fornecer informações atualizadas sobre acontecimentos políticos e oferecendo análises detalhadas. O site foi criado com foco em usabilidade e desempenho, utilizando as melhores práticas de desenvolvimento web para garantir uma experiência dinâmica e informativa aos usuários.",
+      technologies: ["JavaScript", "Typescript", "Tailwind Css", "Next.js"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Kaike2003/wifi-frontend",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/politica.jpg",
+      video: "",
+    },
+    {
       title: "Aplicação web para reserva de ingressos de eventos culturais.",
-      href: "#",
+      href: "https://github.com/Kaike2003/apiEvento/",
       dates: "2023",
       active: false,
       description:
         "O principal objetivo do aplicativo é facilitar a aquisição antecipada de ingressos para eventos, evitando transtornos e filas durante o processo de compra. Os usuários podem realizar a reserva dos ingressos, efetuar o pagamento e garantir suas vagas de forma ágil e segura.",
-      technologies: [
-        "Express js",
-        "JavaScript",
-        "Typescript",
-        "Mysql",
-        "Prisma",
-        "Css",
-        "React js",
-      ],
+      technologies: ["Express js", "JavaScript", "Typescript", "Mysql", "Prisma", "Css", "React js"],
       links: [
         {
-          type: "Website",
-          href: "#",
-          icon: <Icons.globe className="size-3" />,
+          type: "Source",
+          href: "https://github.com/Kaike2003/apiEvento/",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/cultura.jpg",
       video: "",
     },
+
     {
       title: "LinkedPay: informações e adesão ao LPay facilitada.",
       href: "https://linkedpay-ao.vercel.app/",
@@ -175,14 +221,7 @@ export const DATA = {
       active: true,
       description:
         "O app de conversão de arquivos XLS para JSON foi projetado para ajudar a área financeira a obter dados rapidamente, em até 15 segundos. Além disso, possui conexão com uma API eficiente para o armazenamento seguro e a extração de informações detalhadas no formato XLS, oferecendo maior agilidade e precisão no processo.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "TailwindCSS",
-        "Lucide React",
-        "Next Auth",
-        "Shadcn UI",
-      ],
+      technologies: ["Next.js", "Typescript", "TailwindCSS", "Lucide React", "Next Auth", "Shadcn UI"],
       links: [
         {
           type: "Source",
@@ -194,26 +233,18 @@ export const DATA = {
       video: "",
     },
     {
-      title:
-        "API para o armazenamento das informações convertidas de XLS para JSON.",
+      title: "API para o armazenamento das informações convertidas de XLS para JSON.",
       href: "#",
       dates: "Aug 2024 - Present",
       active: true,
       description:
         "A API foi projetada para armazenar as informações de forma organizada e eficiente, convertendo dados de arquivos no formato Excel para JSON. Em seguida, organiza essas informações para o usuário final, fornecendo detalhes como dados por dia ou por mês.",
-      technologies: [
-        "Nest Js",
-        "Typescript",
-        "Mysql",
-        "Prisma",
-        "Express Js",
-        "Zod",
-      ],
+      technologies: ["Nest Js", "Typescript", "Mysql", "Prisma", "Express Js", "Zod"],
       links: [
         {
-          type: "Website",
+          type: "Source",
           href: "#",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/exceldatabase.jpg",
@@ -227,8 +258,7 @@ export const DATA = {
       location: "London, Ontario",
       description:
         "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },
@@ -238,8 +268,7 @@ export const DATA = {
       location: "Waterloo, Ontario",
       description:
         "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },
@@ -250,8 +279,7 @@ export const DATA = {
       description:
         "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
       icon: "public",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
       links: [],
     },
     {
@@ -260,8 +288,7 @@ export const DATA = {
       location: "San Francisco, California",
       description:
         "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
       links: [
         {
           title: "Github",
@@ -276,8 +303,7 @@ export const DATA = {
       location: "Davis, California",
       description:
         "Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
       win: "Best Data Hack",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
       links: [
@@ -309,8 +335,7 @@ export const DATA = {
       location: "Waterloo, Ontario",
       description:
         "Developed a blockchain application for doctors and pharmacists to perform trustless transactions and prevent overdosage in patients.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/eth-waterloo.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/eth-waterloo.png",
       links: [
         {
           title: "Organization",
@@ -323,10 +348,8 @@ export const DATA = {
       title: "Hack The North",
       dates: "September 15th - 17th, 2017",
       location: "Waterloo, Ontario",
-      description:
-        "Developed a virtual reality application allowing users to see themselves in third person.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
+      description: "Developed a virtual reality application allowing users to see themselves in third person.",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
       links: [
         {
@@ -347,8 +370,7 @@ export const DATA = {
       location: "Toronto, Ontario",
       description:
         "Developed an open platform for people shipping items to same place to combine shipping costs and save money.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-6ix.jpg",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-6ix.jpg",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
       links: [
         {
@@ -369,8 +391,7 @@ export const DATA = {
       location: "Toronto, Ontario",
       description:
         "Developed a chrome extension which tracks which facebook profiles you have visited and immediately texts your girlfriend if you visited another girls page.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/stupid-hackathon.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/stupid-hackathon.png",
       links: [
         {
           title: "Source",
@@ -385,8 +406,7 @@ export const DATA = {
       location: "Toronto, Ontario",
       description:
         "Developed a python library which can be imported to any python game and change difficulty of the game based on real time emotion of player. Uses OpenCV and webcam for facial recognition, and a custom Machine Learning Model trained on a [Kaggle Emotion Dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/leaderboard) using [Tensorflow](https://www.tensorflow.org/Tensorflow) and [Keras](https://keras.io/). This project recieved 1st place prize at the Global AI Hackathon - Toronto and was also invited to demo at [NextAI Canada](https://www.nextcanada.com/next-ai).",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/global-ai-hackathon.jpg",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/global-ai-hackathon.jpg",
       win: "1st Place Winner",
       links: [
         {
@@ -405,10 +425,8 @@ export const DATA = {
       title: "McGill AI for Social Innovation Hackathon",
       dates: "June 17th - 18th, 2017",
       location: "Montreal, Quebec",
-      description:
-        "Developed realtime facial microexpression analyzer using AI",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/ai-for-social-good.jpg",
+      description: "Developed realtime facial microexpression analyzer using AI",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/ai-for-social-good.jpg",
       links: [],
     },
     {
@@ -417,8 +435,7 @@ export const DATA = {
       location: "Toronto, Ontario",
       description:
         "Developed a custom admin interface for food waste startup <a href='http://genecis.co/'>Genecis</a> to manage their data and provide analytics.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/open-source-circular-economy-days.jpg",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/open-source-circular-economy-days.jpg",
       win: "1st Place Winner",
       links: [
         {
@@ -433,8 +450,7 @@ export const DATA = {
       dates: "May 19th - 21st, 2017",
       location: "International",
       description: "Improved PocketDoc and submitted to online competition",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
       win: "Top 10 Finalist | Honourable Mention",
       links: [
         {
@@ -464,8 +480,7 @@ export const DATA = {
       dates: "May 12th - 14th, 2017",
       location: "Toronto, Ontario",
       description: "Developed neural network to optimize a mining process",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
       links: [],
     },
     {
@@ -474,8 +489,7 @@ export const DATA = {
       location: "Waterloo, Ontario",
       description:
         "Developed Pocketdoc, an app in which you take a picture of a physical wound, and the app returns common solutions or cures to the injuries or diseases.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
       links: [
         {
           title: "Devpost",
@@ -500,8 +514,7 @@ export const DATA = {
       location: "Waterloo, Ontario",
       description:
         "Developed Earthwatch, a web application which allows users in a plane to virtually see important points of interest about the world below them. They can even choose to fly away from their route and then fly back if they choose. Special thanks to CesiumJS for providing open source world and plane models.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/space-apps.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/space-apps.png",
       links: [
         {
           title: "Source",
@@ -516,8 +529,7 @@ export const DATA = {
       location: "Ann Arbor, Michigan",
       description:
         "Developed Super Graphic Air Traffic, a VR website made to introduce people to the world of air traffic controlling. This project was built completely using THREE.js as well as a node backend server.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
       links: [
         {
@@ -533,8 +545,7 @@ export const DATA = {
       location: "Waterloo, Ontario",
       description:
         "Developed at StartHacks 2017, Recipic is a mobile app which allows you to take pictures of ingredients around your house, and it will recognize those ingredients using ClarifAI image recognition API and return possible recipes to make. Recipic recieved 1st place at the hackathon for best pitch and hack.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/starthacks.png",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/starthacks.png",
       win: "1st Place Winner",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
       links: [
@@ -554,10 +565,8 @@ export const DATA = {
       title: "QHacks II",
       dates: "February 3rd - 5th, 2017",
       location: "Kingston, Ontario",
-      description:
-        "Developed a mobile game which enables city-wide manhunt with random lobbies",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
+      description: "Developed a mobile game which enables city-wide manhunt with random lobbies",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
       links: [
         {
@@ -576,10 +585,8 @@ export const DATA = {
       title: "Terrible Hacks V",
       dates: "November 26th, 2016",
       location: "Waterloo, Ontario",
-      description:
-        "Developed a mock of Windows 11 with interesting notifications and functionality",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
+      description: "Developed a mock of Windows 11 with interesting notifications and functionality",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
       links: [
         {
           title: "Source",
@@ -592,10 +599,8 @@ export const DATA = {
       title: "Portal Hackathon",
       dates: "October 29, 2016",
       location: "Kingston, Ontario",
-      description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
+      description: "Developed an internal widget for uploading assignments using Waterloo's portal app",
+      image: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
       links: [
         {
           title: "Source",
