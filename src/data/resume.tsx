@@ -127,6 +127,42 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Validate-kaike-js",
+      href: "https://github.com/Kaike2003/validate-kaike",
+      dates: "2025",
+      active: false,
+      description:
+        "Validate-kaike-js é uma biblioteca moderna e leve para validação de emails, cartões de identidade, IBANs, passaportes e números de telefone. Desenvolvida para garantir simplicidade e eficiência, a biblioteca permite validações individuais ou múltiplas de forma estruturada e consistente. Com uma API intuitiva e suporte a diversos países, validate-kaike-js é ideal para aplicações que exigem verificações precisas de dados sensíveis.",
+      technologies: ["Esbuild", "Rimraf", "Typescript"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Kaike2003/validate-kaike",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/validate.webp",
+      video: "",
+    },
+    {
+      title: "GeoAngola",
+      href: "https://github.com/Kaike2003/gql-provincias-back-end",
+      dates: "2025",
+      active: false,
+      description:
+        "GeoAngola é uma API inovadora desenvolvida para fornecer dados detalhados e estruturados sobre as províncias de Angola, atendendo tanto pesquisadores quanto desenvolvedores. Com uma abordagem moderna e eficiente, o GeoAngola permite consultas personalizadas via GraphQL, proporcionando acesso rápido a informações administrativas, históricas e culturais.",
+      technologies: ["Express.js", "JavaScript", "Typescript", "GraphQL"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Kaike2003/gql-provincias-back-end",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/provincia.webp",
+      video: "",
+    },
+    {
       title: "NetEase",
       href: "https://github.com/Kaike2003/wifi-frontend",
       dates: "2024-2025",
@@ -251,6 +287,7 @@ export const DATA = {
       video: "",
     },
   ],
+
   hackathons: [
     {
       title: "Hack Western 5",
